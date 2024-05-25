@@ -1,0 +1,38 @@
+// Just centering the board
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #333;
+  }
+  
+  // The outside board. Height and width can be whatever.
+  .sudoku-board {
+    height: 50vmin;
+    width: 50vmin;
+    outline: dotted 2px hsl(320, 90%, 40%);
+  }
+  
+  .sudoku-board, .sudoku-section {
+    display: grid;
+    // Gap is same width as outline
+    grid-gap: 2px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .sudoku-section {
+    outline: dotted 2px hsl(80, 80%, 70%);
+  }
+  
+  .sudoku-tile {
+    outline: dotted 2px hsl(200, 80%, 50%);
+    
+    &:hover {
+      outline: solid 2px hsl(200, 80%, 50%);
+    }
+  }
+  
+  
