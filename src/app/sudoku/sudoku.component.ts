@@ -27,5 +27,19 @@ export class SudokuComponent {
   }
   submitSudoku() {
     console.log(this.sudokuData);
+    console.log(this.completeBoard());
   }
+
+  completeBoard(): boolean {
+    var N = 9;
+    for(var i = 0; i < N; i++) {
+      for(var j = 0; j < N; j++) {
+        if (this.sudokuData[i][j] == 0) {
+          return false
+        }
+      }
+    }
+      return true;
+  }
+
 }
