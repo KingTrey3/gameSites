@@ -1,1 +1,118 @@
-<p>sudoku works!</p>
+
+<div class="sudoku-board">
+    <!-- Section 0 -->
+    <div class="sudoku-section">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[0][0]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[0][1]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[0][2]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[1][0]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[1][1]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[1][2]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[2][0]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[2][1]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[2][2]" min="1" max="9">
+      </div>
+    <!-- Section 1 -->
+    <div class="sudoku-section">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[0][3]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[0][4]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[0][5]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[1][3]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[1][4]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[1][5]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[2][3]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[2][4]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[2][5]" min="1" max="9">
+      </div>
+    <!-- Repeat for all 9 sections -->
+    <!-- Section 2 -->
+    <div class="sudoku-section">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[0][6]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[0][7]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[0][8]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[1][6]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[1][7]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[1][8]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[2][6]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[2][7]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[2][8]" min="1" max="9">
+      </div>
+    <!-- Section 3 -->
+    <div class="sudoku-section">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[3][0]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[3][1]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[3][2]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[4][0]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[4][1]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[4][2]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[5][0]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[5][1]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[5][2]" min="1" max="9">
+      </div>
+    <!-- Section 4 -->
+    <div class="sudoku-section">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[3][3]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[3][4]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[3][5]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[4][3]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[4][4]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[4][5]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[5][3]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[5][4]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[5][5]" min="1" max="9">
+      </div>
+      
+    <!-- Section 5 -->
+    <div class="sudoku-section">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[3][6]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[3][7]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[3][8]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[4][6]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[4][7]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[4][8]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[5][6]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[5][7]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[5][8]" min="1" max="9">
+      </div>
+    <!-- Section 6 -->
+    <div class="sudoku-section">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[6][0]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[6][1]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[6][2]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[7][0]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[7][1]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[7][2]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[8][0]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[8][1]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[8][2]" min="1" max="9">
+      </div>
+      
+    <!-- Section 7 -->
+    <div class="sudoku-section">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[6][3]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[6][4]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[6][5]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[7][3]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[7][4]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[7][5]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[8][3]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[8][4]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[8][5]" min="1" max="9">
+      </div>
+    <!-- Section 8 -->
+    <div class="sudoku-section">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[6][6]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[6][7]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[6][8]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[7][6]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[7][7]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[7][8]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[8][6]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[8][7]" min="1" max="9">
+        <input type="number" class="sudoku-tile" [(ngModel)]="sudokuData[8][8]" min="1" max="9">
+      </div>
+
+      
+  </div>
+  <p></p>
+  <button (click)="submitSudoku()">Submit</button>
